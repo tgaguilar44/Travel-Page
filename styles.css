@@ -119,24 +119,41 @@ h2 {
     margin-top: 50px;
 }
 
-.extradestinations {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
+/* Below is the css for OTHER DESTINATIONS */
 
-.extradest1 {
-    display: block;
-    font-size: 15px;
-    background-color: white;
-    padding: 30px;
-}
-
-.otherdest {
+.otherdestleft {
     display: block;
     background-color: beige;
     float: left;
+    left: 0%;
     width: 60%;
-    border-style: double;
-    border-radius: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 3%;
+    padding-bottom: 8%;
+    padding-right: 30%;
+    border-radius: 20px;
+}
+
+.otherdestright {
+    display: block;
+    background-color: beige;
+    float: right;
+    right: 0%;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 3%;
+    padding-bottom: 8%;
+    padding-left: 30%;
+    border-radius: 20px;
+}
+
+.otherdest {
+    font-size: 40px;
+}
+
+.otherdestdesc {
+    font-size: 20px;
+    margin-top: 20px;
 }

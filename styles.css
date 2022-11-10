@@ -3,10 +3,16 @@
     padding: 0px;
 }
 
+body {
+    background-image: url(flowers.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav {
     display: block;
     background-color: white;
-    font-size: 25px;
+    font-size: 3vh;
     /* below are the flex properties*/
     display: flex;
     flex-flow: row wrap;
@@ -37,7 +43,7 @@ a:active {
 }
 
 p {
-    font-size: 50px;
+    font-size: 10vh;
     /* below are the flex properties*/
     display: flex;
     flex-flow: row nowrap;
@@ -47,7 +53,7 @@ p {
 }
 
 header h1 {
-    font-size: 60px;
+    font-size: 8vh;
     text-align: left;
     padding-top: 5%;
     padding-left: 10%;
@@ -70,11 +76,11 @@ h1 {
 
 h2 {
     display: block;
-    height: 50px;
+
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
-    font-size: 50px;
+    font-size: 8vh;
     color: whitesmoke;
     text-align: center;
 }
@@ -110,13 +116,13 @@ h2 {
     display: block;
     text-align: center;
     padding-top: 10%;
-    font-size: 50px;
+    font-size: 10vh;
     color: white;
 }
 
 .description {
     font-size: 20px;
-    margin-top: 50px;
+    margin-top: 7vh;
 }
 
 /* Below is the css for OTHER DESTINATIONS */
@@ -138,13 +144,15 @@ h2 {
 .otherdestleft {
     float: left;
     left: 0%;
-    padding-right: 30%;
+    padding-right: 35%;
+    position: static;
 }
 
 .otherdestright {
     float: right;
     right: 0%;
-    padding-left: 30%;
+    padding-left: 35%;
+    position: static;
 }
 
 
@@ -183,10 +191,43 @@ h2 {
 */
 
 .otherdest {
-    font-size: 40px;
+    font-size: 6vh;
 }
 
 .otherdestdesc {
-    font-size: 20px;
+    display: block;
+    word-break: break-word;
+    font-size: 2.5vh;
     margin-top: 20px;
+}
+
+/* Below is the CSS for the meals and restaurants */
+
+
+.meal, .hotel {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mealheader, .hotelheader {
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 8vh;
+    text-decoration: underline;
+}
+
+.meal1, .meal2, .meal3,     /* all (meal1,2,3) and (hotel1,2,3) made seperate in case for a specific change */
+.hotel1, .hotel2, .hotel3 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.mealdesc, .hoteldesc {
+    text-align: center;
+    font-size: 4vh;
+    padding: 2%;
 }
